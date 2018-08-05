@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable" >
+    <aura:attribute name="acc" type="Account"/>
+    
+    <lightning:card title="{!v.acc.Name}" iconName="standard:scan_card" >
+       
+        <p class="slds-text-heading--medium slds-p-horizontal--small">
+           Account Name: <lightning:formattedNumber value="{!v.acc.name}" />
+        </p>
+        <p class="slds-p-horizontal--small">
+            Phone: {!v.acc.Phone}
+        </p>
+    </lightning:card>
+	
+</aura:component>
